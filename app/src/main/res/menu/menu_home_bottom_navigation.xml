@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_operations"
+            android:icon="@drawable/operations_drawable_state_resource"
+            android:title="@string/home_nav_title_operations"/>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/account_drawable_state_resource"
+            android:title="@string/home_nav_title_home"/>
+        <item
+            android:id="@+id/nav_bills"
+            android:icon="@drawable/bills_drawable_state_resource"
+            android:title="@string/home_nav_title_bills"/>
+
+    </group>
+
+</menu>

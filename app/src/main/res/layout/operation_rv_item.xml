@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layoutDirection="ltr"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <!--image view for displaying user image-->
+        <ImageView
+            android:id="@+id/idIVSim"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_mtn"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/idIVSim"
+            android:layout_toRightOf="@id/idIVSim"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/idTVMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!--text view for displaying last name-->
+            <TextView
+                android:id="@+id/idTVCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVMobileNumber"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/idIVSim"
+                android:layout_toRightOf="@id/idIVSim"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <!--text view for displaying user email-->
+            <TextView
+                android:id="@+id/idTVDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVCategory"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/idIVSim"
+                android:layout_toRightOf="@id/idIVSim"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!--text view for displaying first name-->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/status_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_marginStart="20dp"
+            app:textAllCaps="true"
+            android:padding="2dp"
+            android:background="@color/md_blue_grey_50"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:alpha="0.7"
+            android:text="_status"/>
+<!--        <View-->
+<!--            android:id="@+id/idStatusView"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:background="@drawable/status_view_false_bg"-->
+<!--            android:layout_alignParentRight="true" />-->
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

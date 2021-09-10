@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    android:background="@color/md_blue_grey_500">
+<androidx.core.widget.NestedScrollView
+
+    android:id="@+id/idNestedSVBills"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_blue_grey_500"
+
+    >
+    <!--linear layout for displaying
+        our recycler view-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Swipe to refresh"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"/>
+            <ImageView
+                android:src="@drawable/ic_swipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="swipe to refresh"
+                android:gravity="center_horizontal"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <!--recycler view for displaying our list of data
+            and we are making nested scroll for our
+            recycler view as false-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idRVBills"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/bill_rv_item"
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

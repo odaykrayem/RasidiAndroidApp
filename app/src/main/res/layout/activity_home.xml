@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.HomeActivity"
+    android:background="@color/md_blue_grey_500"
+    >
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/home_fragments_container"
+        android:layout_above="@id/home_screen_bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- fist step into dark-light theme without doing a lot of work !!!-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_screen_bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemRippleColor="@color/transparent"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_home_bottom_navigation"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add_operation_fb"
+        android:layout_above="@id/home_screen_bottomNavigationView"
+        android:layout_margin="20dp"
+        android:background="@color/transparent"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
