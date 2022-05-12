@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.verificationnumberapp">
+    package="com.example.RasidiAndroid">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,17 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".VerifyOTPActivity"
+        <activity android:name="com.example.RasidiAndroid.VerifyOTPActivity"
             android:screenOrientation="portrait"
             >
 
         </activity>
-        <activity android:name=".SendOTPActivity"
+        <activity android:name="com.example.RasidiAndroid.SendOTPActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
 
         </activity>
-        <activity android:name=".Activities.EnterScreenActivity">
+        <activity android:name="com.example.RasidiAndroid.Activities.EnterScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,11 +32,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Activities.HomeActivity">
+        <activity android:name="com.example.RasidiAndroid.Activities.HomeActivity">
 
 
         </activity>
-        <activity android:name=".Activities.AddOperationActivity" />
+        <activity android:name="com.example.RasidiAndroid.Activities.AddOperationActivity" />
 
     </application>
 
