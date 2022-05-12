@@ -86,6 +86,7 @@ public class AddOperationActivity extends AppCompatActivity implements AdapterVi
                     selectedProvider = OperationModel.MTN_STRING;
                 } else if (position == 1) {
                     selectedProvider = OperationModel.SYRIATEL_STRING;
+                    selectedProvider = OperationModel.SYRIATEL_STRING;
                 }
                 //  selectedProvider = customSpinnerItem.getProviderName();
                 //     Toast.makeText(getContext(), selectedProvider, Toast.LENGTH_SHORT).show();
